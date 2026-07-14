@@ -1,0 +1,14 @@
+// 在 ~/.config/niri/config.kdl 的 environment {} 块中需要包含以下输入法相关变量
+
+environment {
+    LANGUAGE "zh_CN:en"
+    LANG "zh_CN.UTF-8"
+
+    // 输入法环境变量（必需）
+    XMODIFIERS "@im=fcitx"
+    QT_IM_MODULES "wayland;fcitx"
+    GTK_IM_MODULE "fcitx"
+    QT_IM_MODULE  "fcitx"
+
+    // 其余环境变量按需保留...
+}
